@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang='en'>
+      <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <title>Snake Game</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      </head>
+    
+    
+      <body>
+   
+      <!-- Game end screen -->
+      <div id="endScreen">
+        <p>GAME OVER!!</p>
+        <div>
+          <button class="" id="endBtn">PLAY AGAIN</button>
+        </div>
+      </div>
+      
+      <!-- <div id="startScreen"> -->
+        <div id="startScreen">
+          <form id="form">
+            <!-- <label class="select-none" for="playerName1">Player Name: </label> -->
+            <input id="playerName1" type="text" name="name" placeholder="Player Name">
+            <a id="startBtn">Play</a>
+          </form>
+
+        </div>
+      <!-- </div> -->
+      <!-- Leaderboard -->
+      <div id="leaderBoard-form">
+          <div id="leaderBoard">
+            <table id="tableContainer">
+              <thead id="table-header">
+                <tr>
+                  <th>Player Name </th>
+                  <th>Level </th>
+                  <th>Score </th>
+                </tr>
+              </thead>
+              <tbody id="table-body"></tbody>
+            </table>
+          </div>
+        </div>
+        
+        <div id="playscreen">
+          <!-- Scoreboard -->
+          <div id="level__score">
+            <span id="name">Name</span>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+            <span>Level: </span><span class="select-none" id="level">0</span>&nbsp; &nbsp; &nbsp; 
+            <span>Score: </span><span class="select-none" id="score">0</span>
+          </div>
+          <!-- Canvas -->
+          <canvas id="snakeboard" height="400" width="400"></canvas>
+        </div>
+        <!-- <script src="../app.js"></script> -->
+        <!-- <script src="../data.js" async></script> -->
+        <script src="../index.js"></script>
+
+      </body>
+    
+    </html>
+  
+</body>
+</html>
